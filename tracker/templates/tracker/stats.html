@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Squirrel Tracker Stats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+{% load static  %}
+<link rel="stylesheet" href="{% static 'sightings/custom.css' %}">
+	  
+  </head>
+  <body>
+
+     <!-- NAVBAR ----------------------------------------------- -->
+     <nav class="navbar navbar-dark navbar-expand-lg" style="background-color:green">
+        <a class="navbar-brand" href="{% url 'tracker:home'  %}">Squirrel Tracker</a>    
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav ml-auto mr-1">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'tracker:sightings'  %}">Sightings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'tracker:map'  %}">Map</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+<br>
+      <div class="pricing header text-center">
+  <h1>Squirrel Statistics from Squirrel Sightings</h1>
+  <p>Fun facts and stats about the squirrels</p>
+</div>
+
+<hr>
+  <div class="container">
+   <div class="card-deck mb-3 text-center">
+     <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4>Total Seen</h4>
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled">
+	 <li>{{total_seen}}</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4>Number Running</h4>
+      </div>
+      <div class="card-body">
+	      <ul class="list-unstyled">
+	  <li>{{number_running}}</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4>Number Climbing</h4>
+      </div>
+      <div class="card-body">
+	      <ul class="list-unstyled">
+          <li>{{number_climbing}}</li>
+        </ul>
+      </div>
+    </div>
+	
+	
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4>Adults Seen</h4>
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled">
+          <li>{{adults_seen}}</li>
+        </ul>
+      </div>
+    </div>
+    
+    
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4>Juveniles Seen</h4>
+      </div>
+      <div class="card-body">
+	      <ul class="list-unstyled">
+          <li>{{juvenile_seen}}</li>
+        </ul>
+      </div>
+    </div>
+	 
+   </div>  
+</div>
+<hr>
+    <!-- FOOTER -------------------------------------------------------------------------------------->
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2020 Natalie Crow and John Kim</p>
+    </footer>
+
+ </body>
+</html>
