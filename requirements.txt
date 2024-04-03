@@ -4,7 +4,7 @@ cli-helpers==2.1.0
 click==7.1.2  
 configobj==5.0.6
 humanize==4.9.0  
-pgcli==3.0.0  
+pgcli==4.0.1  
 pgspecial==1.11.10
 pip==24.0 
 prompt-toolkit==3.0.43  
