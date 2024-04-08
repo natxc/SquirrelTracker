@@ -10,7 +10,7 @@ pgspecial==2.0.0
 pip==24.0 
 prompt-toolkit==3.0.43  
 psycopg2==2.8.6  
-psycopg2-binary==2.8.6  
+psycopg2-binary==2.9.9  
 Pygments==2.7.1  
 pytz==2020.1 
 setproctitle==1.1.10 
