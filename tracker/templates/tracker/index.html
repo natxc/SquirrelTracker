@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Our CSS -->
     {% load static  %}
-    <link rel="stylesheet" href="{% static 'sightings/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
   </head>
 
   <!-- BODY ------------------------------------------------- -->
@@ -42,7 +42,7 @@
             <p><a class="btn btn-secondary" href="sightings.html" role="button" style="background-color: green;">View sightings &raquo;</a></p>
         </div>
         <div class="col-md-5">
-		<img src="{% static "sightings/sightings.jpg" %}" class="img-thumbnail">
+		<img src="{% static "images/sightings.jpg" %}" class="img-thumbnail">
         </div>
     </div>
 
@@ -55,7 +55,7 @@
             <p><a class="btn btn-secondary" href="map.html" role="button" style="background-color: green">View map &raquo;</a></p>
         </div>
         <div class="col-md-5 order-md-1">
-		<img src="{% static "sightings/map.jpg" %}" class="img-thumbnail">
+		<img src="{% static "images/map.jpg" %}" class="img-thumbnail">
         </div>
     </div>
 
@@ -68,7 +68,7 @@
             <p><a class="btn btn-secondary" href="{% url 'tracker:stats'  %}" role="button" style="background-color: green">View stats &raquo;</a></p>
         </div>
         <div class="col-md-5">
-		<img src="{% static "sightings/stats.jpg" %}" class="img-thumbnail">
+		<img src="{% static "images/stats.jpg" %}" class="img-thumbnail">
         </div>
     </div>
 
@@ -83,7 +83,7 @@
     <!-- FOOTER -------------------------------------------------------------------------------------->
     <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2020 Natalie Crow and John Kim</p>
+        <p>&copy; 2024 Natalie Crow</p>
     </footer>
 </body>
 </html>

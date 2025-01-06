@@ -3,10 +3,8 @@ from tracker.models import Squirrel
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import SquirrelAddForm
 
-
-
 def index(request):
-    return render(request, 'index.html', {})
+    return render(request, 'tracker/index.html', {})
 
 def map(request):
     squirrels = Squirrel.objects.all()[:100]
