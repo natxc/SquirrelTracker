@@ -1,8 +1,8 @@
-Django-based application that imports (Central Park Squirrel Census data)[https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw/data] and allows for additions, updates, and views of squirrel data. 
+Django-based application that imports [Central Park Squirrel Census data](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw/data) and allows for additions, updates, and views of squirrel data. 
 
 Utilized sqlite3, Leaflet.js, html, css, bootstrap, and others via a Ubuntu VM on Google Cloud Platform.
 
-(Check it out 🐿️)[https://squirrel-tracker-7adff3577835.herokuapp.com/]
+[Check it out 🐿️](https://squirrel-tracker-7adff3577835.herokuapp.com/)
 
 # SquirrelTracker
 
